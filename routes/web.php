@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'DriveController@index');
 
-Route::get('/create/{email}', 'DriveController@create');
+Route::post('/create/{firstname}/{lastname}/{profile_url}/{messenger_id}/{gmail}/{gender}', 'DriveController@create');
 
 Auth::routes();
 
