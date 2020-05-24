@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'DriveController@index');
 
-Route::get('/create/{firstname}/{lastname}/{profile_url}/{messenger_id}/{gmail}/{gender}', 'DriveController@create');
+Route::get('/create/{messenger_id}/{gmail}', 'DriveController@create');
 
 Auth::routes();
 

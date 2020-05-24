@@ -13,18 +13,12 @@ class DriveController extends Controller
     {
     }
 
-    public function create($firstname, $lastname, $profile_url, $messenger_id, $gmail, $gender)
+    public function create($messenger_id, $gmail)
     {
 
-        $username = $firstname + ' ' + $lastname;
-
-
         Drive::create([
-            'name' => $username,
-            'profile_picture_url' => $profile_url,
             'messenger_user_id' => $messenger_id,
             'gmail' => $gmail,
-            'gender' => $gender
         ]);
 
 

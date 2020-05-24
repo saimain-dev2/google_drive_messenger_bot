@@ -15,11 +15,8 @@ class CreateDrivesTable extends Migration
     {
         Schema::create('drives', function (Blueprint $table) {
             $table->id();
-            $table->text('name');
-            $table->text('profile_pictrue_url');
             $table->text('messenger_user_id');
             $table->text('gmail');
-            $table->string('gender');
             $table->timestamps();
         });
     }
